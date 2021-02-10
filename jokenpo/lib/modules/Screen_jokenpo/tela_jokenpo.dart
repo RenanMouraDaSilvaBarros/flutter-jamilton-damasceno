@@ -1,10 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:jokenpo/modules/Screen_jokenpo/components/choice.dart';
-import 'package:jokenpo/modules/Screen_jokenpo/constant/imagens_constant.dart';
 import 'package:jokenpo/modules/Screen_jokenpo/constant/play.dart';
-import 'package:jokenpo/modules/Screen_jokenpo/constant/result.dart';
-import 'package:jokenpo/modules/Screen_jokenpo/model/card_model.dart';
 
 import 'constant/data.dart';
 
@@ -19,9 +16,10 @@ class _TelaJokenpoState extends State<TelaJokenpo> {
 
   int _generate() => Random().nextInt(3);
 
-  void _calculateResult(int machine, int player) {
-    _result = Data.matrix[player][machine].toString();
-  }
+  void _calculateResult(int machine, int player) =>
+      _result = Data.matrix[player][machine].toString();
+
+  Widget _machine(int index) => Choice(card: Data.cards[index]);
 
   Widget _option(List options) {
     List option = [];
@@ -41,8 +39,6 @@ class _TelaJokenpoState extends State<TelaJokenpo> {
       }).toList(),
     );
   }
-
-  Widget _machine(int index) => Choice(card: Data.cards[index]);
 
   @override
   Widget build(BuildContext context) {
