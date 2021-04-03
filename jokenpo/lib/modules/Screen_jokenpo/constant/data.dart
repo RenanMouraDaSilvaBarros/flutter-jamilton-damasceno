@@ -5,9 +5,10 @@ import 'package:jokenpo/modules/Screen_jokenpo/model/card_model.dart';
 
 class Data {
   static List<List<Result>> matrix = [
-    [Result.TIE, Result.LOSE, Result.WIN],
-    [Result.WIN, Result.TIE, Result.LOSE],
-    [Result.LOSE, Result.WIN, Result.TIE]
+                //pedra           papel        tesoura
+    /*pedra*/   [Result.TIE, Result.LOSE, Result.WIN],
+    /*papel*/   [Result.WIN, Result.TIE, Result.LOSE],
+    /*tesoura*/ [Result.LOSE, Result.WIN, Result.TIE]
   ];
 
   static List<CardModel> cards = [
