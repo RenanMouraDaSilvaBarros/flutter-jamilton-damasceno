@@ -1,6 +1,6 @@
 {
-    "name": "shared_preferences",
-    "short_name": "shared_preferences",
+    "name": "shared_data_manipulation",
+    "short_name": "shared_data_manipulation",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

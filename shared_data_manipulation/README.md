@@ -1,4 +1,4 @@
-# shared_preferences
+# shared_data_manipulation
 
 A new Flutter project.
 

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "shared_preferences")
-set(APPLICATION_ID "com.example.shared_preferences")
+set(BINARY_NAME "shared_data_manipulation")
+set(APPLICATION_ID "com.example.shared_data_manipulation")
 
 cmake_policy(SET CMP0063 NEW)
 
